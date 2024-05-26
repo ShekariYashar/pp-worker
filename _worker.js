@@ -807,8 +807,8 @@ function getVLESSConfig(userIDs, hostName) {
 </p>`);
 header.push(`\n<p align="right" style="direction: rtl; text-align: right; font-size: 15px;" >👋خوش آمدید: با اینکه سریعترین اینترنت (داخلی) رو در سطح استان داریم میتوانید از کانفیگ های Vless زیر برای کاهش سرعت جهت جلوگیری از تصادفات اینترنتی استفاده کنید.</p>\n`);
 header.push(`<p align="right" style="direction: rtl; text-align: right; font-size: 15px;" >اگر کانفیگ های VLESS برات کار کرد میتونی به این برنامه یک ستاره 🌟 بدی.</p>\n`);
-header.push(`\n<p align="right" style="direction: rtl; text-align: right;"><a href="https://github.com/Ptechgithub/pp-worker" target="_blank">pp-worker - https://github.com/Ptechgithub/pp-worker</a></p>\n`);
-header.push(`\n<p align="right" style="direction: rtl; text-align: right;"><iframe src="https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>\n\n`.replace(/USERNAME/g, "Ptechgithub").replace(/REPOSITORY/g, "pp-worker"));
+header.push(`\n<p align="right" style="direction: rtl; text-align: right;"><a href="https://github.com/Ptechgithub/pp-worker1031" target="_blank">pp-worker1031 - https://github.com/Ptechgithub/pp-worker1031</a></p>\n`);
+header.push(`\n<p align="right" style="direction: rtl; text-align: right;"><iframe src="https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>\n\n`.replace(/USERNAME/g, "Ptechgithub").replace(/REPOSITORY/g, "pp-worker1031"));
 header.push(`<p align="right" style="direction: rtl; text-align: right;"><a href="//${hostName}/sub/${userIDArray[0]}" target="_blank">✅️ لیست کانفیگ های VLESS</a></p>\n<p align="right" style="direction: rtl; text-align: right;"><a href="https://subconverter.do.xn--b6gac.eu.org/sub?target=clash&url=https://${hostName}/sub/${userIDArray[0]}?format=clash&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true" target="_blank">✅️ لیست کانفیگ های CLASH</a></p>\n`);
 header.push(``);
 
@@ -827,18 +827,18 @@ header.push(``);
 	// HTML Head with CSS
 	const htmlHead = `
     <head>
-        <title>pp-worker: VLESS configuration</title>
-        <meta name="description" content="This is a tool for generating VLESS protocol configurations. Give us a star on GitHub https://github.com/Ptechgithub/pp-worker if you found it useful!">
-		<meta name="keywords" content="pp-worker, cloudflare pages, cloudflare worker, severless">
+        <title>pp-worker1031: VLESS configuration</title>
+        <meta name="description" content="This is a tool for generating VLESS protocol configurations. Give us a star on GitHub https://github.com/Ptechgithub/pp-worker1031 if you found it useful!">
+		<meta name="keywords" content="pp-worker1031, cloudflare pages, cloudflare worker, severless">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:site_name" content="pp-worker: VLESS configuration" />
+		<meta property="og:site_name" content="pp-worker1031: VLESS configuration" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="pp-worker - VLESS configuration and subscribe output" />
+        <meta property="og:title" content="pp-worker1031 - VLESS configuration and subscribe output" />
         <meta property="og:description" content="Use cloudflare pages and worker severless to implement vless protocol" />
         <meta property="og:url" content="https://${hostName}/" />
         <meta property="og:image" content="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`vless://${userIDs.split(',')[0]}@${hostName}${commonUrlPart}`)}" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="pp-worker - VLESS configuration and subscribe output" />
+        <meta name="twitter:title" content="pp-worker1031 - VLESS configuration and subscribe output" />
         <meta name="twitter:description" content="Use cloudflare pages and worker severless to implement vless protocol" />
         <meta name="twitter:url" content="https://${hostName}/" />
         <meta name="twitter:image" content="https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky" />
@@ -926,7 +926,7 @@ function createVLESSSub(userID_Path, hostName) {
 
 				// For each proxy IP, generate a VLESS configuration and add to output
 				proxyIPs.forEach((proxyIP) => {
-					const vlessSecHttp = `vless://${userID}@${proxyIP}${commonUrlPart_http}-${proxyIP}-pp-worker`;
+					const vlessSecHttp = `vless://${userID}@${proxyIP}${commonUrlPart_http}-${proxyIP}-pp-worker1031`;
 					output.push(`${vlessMainHttp}`);
 					output.push(`${vlessSecHttp}`);
 				});
@@ -939,7 +939,7 @@ function createVLESSSub(userID_Path, hostName) {
 
 			// For each proxy IP, generate a VLESS configuration and add to output
 			proxyIPs.forEach((proxyIP) => {
-				const vlessSecHttps = `vless://${userID}@${proxyIP}${commonUrlPart_https}-${proxyIP}-pp-worker`;
+				const vlessSecHttps = `vless://${userID}@${proxyIP}${commonUrlPart_https}-${proxyIP}-pp-worker1031`;
 				output.push(`${vlessMainHttps}`);
 				output.push(`${vlessSecHttps}`);
 			});
